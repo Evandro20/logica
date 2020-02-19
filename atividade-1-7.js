@@ -4,5 +4,5 @@ var lados = user.question( " Quantos lados tem seu poligono regular entre os num
 var altura = user.question( " Quantos centimetros tem um dos lados? ")
 
 if( lados == 3){
-    console.log()
+    console.log(" Seu Poligono e um Traiangulo e a soma dos lados e :"  )
 }
