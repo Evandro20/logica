@@ -17,7 +17,9 @@ var corDoCarro2 = user.question('Insira a cor do segundo carro: ')
 
 var comparacao1 = new Carro(nomeDoCarro1, modeloDoCarro1, corDoCarro1)
 var comparacao2 = new Carro(nomeDoCarro2, modeloDoCarro2, corDoCarro2)
-if (nomeDoCarro1 === nomeDoCarro2 && modeloDoCarro1 === modeloDoCarro2) {
+
+
+if (comparacao1.nome === comparacao2.nome && comparacao1.modelo === comparacao2.modelo) {
     console.log(" Os carros sao iguais ")
 } else {
     console.log(' Os carros sao diferentes')

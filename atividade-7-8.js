@@ -1,0 +1,5 @@
+var user = require('readline-sync')
+var campos = user.question(" Insira 4 dados separados com ;: ")
+var valores = user.question( " Insira 4 valores equivalentes aos dados separados por ;: ")
+var campo = campos.split(';')
+console.log(campo)
