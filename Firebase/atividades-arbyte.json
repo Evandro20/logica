@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "atividades-arbyte",
+  "private_key_id": "26c1298536496456849e5a6a0a52927a45889dc8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCoXRGawrsKW8Zs\n77I19mS7KBIupxuYSBzTRyXNy9A3MyaW7PTDo9BEHkcB3n2J9BgJLHz6XP9qxuS0\nOXBPoCVxMDR0poIGj3mcAxTov6TEoXaHjopa/fX3nxkD3Nv5IEKfm7DVa7f6CeOP\nJLqEAVLX6LBk7J3yRN4Pe/7eal3o8P8BkiFHeZnSc9TQdQl6VZ591hP98fXhMZrB\nR4co3xye/2j1z4Tu7Krp0bSbAlLilxS6TVLgLZp2vnhimVteWeVH3xq4YBMhR1zf\npEybMGOep5Nb84oefXaDsZ6bug6WX4UpSLTS+mIXEFtJX3Cs8b+2XMi5PZxME069\nOSwvt7mFAgMBAAECggEAA0NkiTWfhvSe7LMbpuia7La63X0fL40sQ9sT7EB4TW2Y\nIKJAnz8gVQWqNirQD5mz0o+yb27Yg4MN4UFgwCZYO3Cl/6HPkN18i63SnK1EPgxs\nHfYBEADuoMlMZJMGD3bU27+ahpRzKS1CZB6f39mft7AapSYh7JVxoWazmq+AmPh0\nviDV9r+syu2wr/Rkzh4/94vh1l6hemo6sm8ft4CNq2OxwOsrpXzFe6TUr+8Z4iXx\nUYQ+Bv4+Sm7D0pS0uVKMaKaz94SO+Z6YI4DFlraaRmoc/c98iHSuWamqab7eQqlC\nuvDmgWspoJJ0UfSCPOWpyj4nT4ofr65tMbC/e4goAQKBgQDlnjCj0JFBNQDGUyOH\nluR9obt12iS6OdzfqfmBTxhUiU4Ato0RF9dP0adf3POi0tu5Hb/zz9v/EozvCBqL\nE8eMsDnUcDYG/a5yFjtU21VO9Gc74xFqqHYt0xd2OGoriPrQatDSjcxiB4GL+aC2\njoK90w0NLSAbtXjurBDU/lexhQKBgQC7tTAyOXY38gwZZMPgZ/Cu1PrZVyYw6aUF\nH00vsbehwRNf9h4c2I+kq/qAHq+MsTJSGOMdnj7oZIjziw9Avf8T+tQodehZMLvH\n87M3CNLFDiJuw871TSyoTKM2KRzL65TlEmGgAGwdPG7wR96H2tao1A55jlhn4536\nRKlWrtpoAQKBgHAVuxqL+gvBisJE3SgXwSuOYkqSFLGPA0Fu4Gt9p5vEdn4knlHE\nuIavCavi2E8X7Me9PPEP+wzVClS4OPTAz/zeHSyVJdpdxOTN82JluovTA/2Yxuyw\nlRejXmWH/lOIBx7rtUnCjA0iKtugHBJhGHL+7fULnQvJluGyvniqOzZdAoGBAJrw\nZGgQplRnpzUOx+Bj63dkterQ1OVq9pvTypKjzz/lb2i2bwTAfVEf5BX9PkqTuUWq\n5U19Yc/RrHnbPyvhqLuFP7pmGPQGFfpmXnf/AHtHv4ROfHZezY3eNJpwNSTdwHmV\nQqAfuR4o1CniKP1a1fVllM0hgje+2pfKNT0n94ABAoGBAL+8S+GaJo68acUTkN12\n1cmXJ4Bp7v07hDRsbsKLZsSB+cIyDT7WH588heFgNESBcHQafjzE9GlQsRmybpXS\nO8Qi9/3G03uKvcZQMhUkOMvTRUvPmq6m0h6XN5XGGZj+TAfYt4Be3YgAsVfNDi6K\nxK+AKbdSa+bJrEenqnGXyAo8\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-iwxpo@atividades-arbyte.iam.gserviceaccount.com",
+  "client_id": "109152809635333545024",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-iwxpo%40atividades-arbyte.iam.gserviceaccount.com"
+}
