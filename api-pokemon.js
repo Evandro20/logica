@@ -2,6 +2,7 @@ var user = require('readline-sync')
 var axios = require('axios')
 var admin = require("firebase-admin");
 var serviceAccount = require("./credenciais-pokemon.json");
+var chalk = require('chalk')
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://pokemon-efe82.firebaseio.com"
@@ -23,14 +24,14 @@ function exibirPokemon() {
       var nomePokemon = resultado.data.name
       var tipoPokemon = resultado.data.types
       var habilidadePokemon = resultado.data.abilities
-      console.log('O nome do Pokemon e:\n' + nomePokemon.toUpperCase())
+      console.log(chalk.blue('O nome do Pokemon e:\n' + nomePokemon.toUpperCase()))
       console.log('O tipo do pokemon e:')
       tipoPokemon.map(pokemon => {
-        console.log(pokemon.type.name.toUpperCase())
+        console.log(chalk.yellow(pokemon.type.name.toUpperCase()))
       })
       console.log('Suas habilidades sao:')
       habilidadePokemon.map(habilidade => {
-        console.log(habilidade.ability.name.toUpperCase())
+        console.log(chalk.red(habilidade.ability.name.toUpperCase()))
       })
       var mostrar = false
       while (mostrar == false) {
@@ -42,7 +43,7 @@ function exibirPokemon() {
             .then(resultado => {
               var efeito = resultado.data.effect_entries
               for (i = 0; i < efeito.length; i++) {
-                console.log(efeito[i].effect.toUpperCase())
+                console.log(chalk.green(efeito[i].effect.toUpperCase()))
               }
             })
             .catch(erro => {
@@ -50,7 +51,7 @@ function exibirPokemon() {
             })
         } else if (perguntarHabilidade == 2) {
           mostrar = true
-          console.log('Vamos Continuar')
+          console.log(chalk.black('Vamos Continuar'))
         } else {
           mostrar = false
           console.log('Insira um valor valido! ')
@@ -73,39 +74,39 @@ function exibirPokemon() {
               var pokemonMesmoTipo = resultado.data.pokemon
               console.log('Esse tipo Causa o dobro de dano nos tipos:')
               for (x = 0; x < causaDobroDano.length; x++) {
-                console.log(causaDobroDano[x].name.toUpperCase())
+                console.log(chalk.red(causaDobroDano[x].name.toUpperCase()))
               }
 
               console.log('Esse tipo nao Causa dano nos Tipos: ')
               for (x = 0; x < naoCausaDano.length; x++) {
-                console.log(naoCausaDano[x].name.toUpperCase())
+                console.log(chalk.green(naoCausaDano[x].name.toUpperCase()))
               }
               console.log('Esse tipo Causa Metado de Dano nos Tipos: ')
               for (x = 0; x < causaMetadeDano.length; x++) {
-                console.log(causaMetadeDano[x].name.toUpperCase())
+                console.log(chalk.blue(causaMetadeDano[x].name.toUpperCase()))
               }
               console.log('Esse tipo nao Toma dano dos tipos: ')
               for (x = 0; x < naoTomaDano.length; x++) {
-                console.log(naoTomaDano[x].name)
+                console.log(chalk.red(naoTomaDano[x].name))
               }
               console.log('Esse tipo toma matade do danos dos tipos: ')
               for (x = 0; x < tomaMetadeDano.length; x++) {
-                console.log(tomaMetadeDano[x].name.toUpperCase())
+                console.log(chalk.green(tomaMetadeDano[x].name.toUpperCase()))
               }
               console.log('Esse tipo toma o dobro do dano dos tipos: ')
               for (x = 0; x < tomaDobroDano.length; x++) {
-                console.log(tomaDobroDano[x].name.toUpperCase())
+                console.log(chalk.blue(tomaDobroDano[x].name.toUpperCase()))
               }
               console.log('Os tipos semelhantes a esse sao os Pokemons: ')
               for (x = 0; x < pokemonMesmoTipo.length; x++) {
-                console.log(pokemonMesmoTipo[x].pokemon.name.toUpperCase())
+                console.log(chalk.yellow(pokemonMesmoTipo[x].pokemon.name.toUpperCase()))
               }
             })
             .catch(erro => {
               console.log('O tipo colocado esta incorreto')
             })
         } else if (perguntarVantagem == 2) {
-          console.log("Vamos Continuar! ")
+          console.log(chalk.black("Informacoes concluidas! "))
           mostrarVantagem = true
         } else {
           console.log('Informacao invalida! ')
